@@ -1,0 +1,63 @@
+/* /////////General stylesheet/// */
+
+/* This is for change the whole page */
+body {
+  background-color: #70aaaaa3;
+  margin: 20vh;
+  text-align: center;
+}
+
+/* Layout */
+
+/* This is gor box which  text and button to click. */
+.box {
+  border: 5px #333 solid;
+  max-width: 100%;
+  padding-bottom: 40px;
+}
+
+/* conmponent */
+
+/* This is the detail change for button */
+button {
+  border-radius: 5px;
+  margin: 0 0 20px 10px;
+  padding: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+/* this is for the slide efect fot button */
+button::after {
+  content: "";
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 350ms;
+}
+
+/* This is for what happens when the user hover the button */
+button:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* This is for color change when user hover the button and change mouse cursor to pointer*/
+button:hover {
+  color: white;
+  cursor: pointer;
+}
+
+/* Typography */
+
+/* This is heading which give space between box div and button */
+h1 {
+  padding: 20px 0 40px;
+}

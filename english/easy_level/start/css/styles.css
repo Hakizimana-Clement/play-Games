@@ -1,0 +1,96 @@
+/* ///////////////////////////// Global style /////////////////////////////*/
+body {
+  background-color: #9c9fbe;
+  text-align: center;
+  color: black;
+}
+
+/* ///////////////////////////// Layout ///////////////////////////// */
+.box {
+  border: 2px black solid;
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+  padding-top: 10px;
+  margin-right: 20px;
+}
+
+.home_icon {
+  margin-left: 10px;
+}
+
+a img {
+  width: 5vh;
+}
+
+a img:hover {
+  background-color: rgb(255, 255, 255);
+  padding: 1px;
+  border-radius: 27%;
+}
+
+.pressed_button {
+  box-shadow: 0px 5px 25px rgb(80 21 110);
+  background-color: rgb(0, 0, 0);
+}
+
+.game-over {
+  background-color: rgb(199, 11, 11);
+}
+
+/* ///////////////////////////// component //////////////////*/
+/* img */
+img {
+  max-width: 100%;
+}
+/* button */
+button {
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 0;
+}
+
+button:hover {
+  background-color: rebeccapurple;
+}
+
+/* video */
+video {
+  width: 90vh;
+}
+
+/* images id */
+
+.sky {
+  margin-top: 2px;
+}
+
+.water {
+  margin-top: 2px;
+}
+
+.land {
+  margin-top: 2px;
+}
+
+/* ///////////////////////////// Typography ///////////////////////////// */
+
+h1 {
+  margin-top: 0;
+}
+
+p {
+  text-align: left;
+  padding: 10px;
+  font-size: 1.3rem;
+}
+
+footer p {
+  text-align: center;
+}
